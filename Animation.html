@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+
+    <style type="text/css">
+      .box1-container{
+        width:1400px;
+        height:500px;
+        border: 10px black solid;
+        margin: auto;
+        position: relative;
+      }
+      .box1{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 20, 20);
+        position: absolute;
+        top: 00px;
+        left: 00px;
+      /*  animation-name: box;
+        animation-duration: 11s; */
+        animation: box1 11s;
+        animation-delay: 1s;
+        animation-iteration-count: 10;
+        animation-direction: alternate;
+      }
+      .text{
+        margin-top: 220px;
+        margin-bottom: 280px;
+        text-align: center;
+        font: 3em sans-serif;
+      }
+      @keyframes box1{
+          0%{
+             top: 0px;
+             left:0px;
+             background-color: red;
+             
+          }
+          25%{
+             top: 00px;
+             left: 1200px;
+             background-color: yellow;
+          }
+          50%{
+            top: 300px;
+            left: 1200px;
+            background-color: green;
+          }
+          75%{
+            top: 300px;
+            left: 00px;
+            background-color: blue;
+          }
+          100%{
+            top: 0px;
+            left: 0px;
+            background-color: red;
+          }
+      }
+      .box2-container{
+        width: 1000px;
+        height: 100px;
+        background-color: rgb(177, 253, 253);
+        border: 3px black solid;
+        margin: auto;
+        margin-top: 30px;
+        position: relative;
+      }
+      .box2{
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        background-color: blue;
+        top: 00px;
+        left: 00px;
+        position: absolute;
+        animation: box2 5s;
+        animation-delay: 1s;
+        animation-iteration-count: 10;
+        animation-direction: alternate;
+        animation-timing-function: ease;
+      }
+     @keyframes box2{
+        from{ 
+             left:0px;
+             background-color: rgb(21, 0, 255);
+          }
+          to{
+            left: 900px;
+            background-color: blueviolet;
+          }
+     }
+    
+      .box3{
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        background-color: blue;
+        top: 00px;
+        left: 00px;
+        position: absolute;
+        animation: box3 5s;
+        animation-delay: 1s;
+        animation-iteration-count: 10;
+        animation-direction: alternate;
+        animation-timing-function: ease-in;
+      }
+     @keyframes box3{
+        from{ 
+             left:0px;
+             background-color: rgb(21, 0, 255);
+          }
+          to{
+            left: 900px;
+            background-color: blueviolet;
+          }
+     }
+      .box4{
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        background-color: blue;
+        top: 00px;
+        left: 00px;
+        position: absolute;
+        animation: box4 5s;
+        animation-delay: 1s;
+        animation-iteration-count: 10;
+        animation-direction: alternate;
+        animation-timing-function: ease-out;
+      }
+     @keyframes box4{
+        from{ 
+             left:0px;
+             background-color: rgb(21, 0, 255);
+          }
+          to{
+            left: 900px;
+            background-color: blueviolet;
+          }
+     }
+      .box5{
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        background-color: blue;
+        top: 00px;
+        left: 00px;
+        position: absolute;
+        animation: box5 5s;
+        animation-delay: 1s;
+        animation-iteration-count: 10;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+      }
+     @keyframes box5{
+        from{ 
+             left:0px;
+             background-color: rgb(21, 0, 255);
+          }
+          to{
+            left: 900px;
+            background-color: blueviolet;
+          }
+     }
+     h6{
+        text-align: center; 
+        font: 1em sans-serif; 
+        color: #fc0993
+     }
+    </style>
+    <title>Animation Page</title>
+
+</head>
+<body>
+    <h1 style="text-align: center; font: 4em sans-serif; color: #873e23">
+        hello from the Animation Page
+    </h1>
+
+    <h5 style="text-align: center; font: 2em sans-serif; color: #873e23">
+        Animation Box
+    </h5>
+    <div class="box1-container">
+        <div class="box1"></div>
+        <div class="text">hey bachu! dekh raha Jadoo mazze se </div>
+    </div>
+
+    <h5 style="text-align: center; font: 2em sans-serif; color: #873e23">
+        for Reading Ease in Ease out funtion
+    </h5>
+      <div class="box2-container">
+        
+      <h6> Linear </h6>
+          <div class="box2">
+               
+          </div>
+      </div>
+
+      <div class="box2-container">
+        <h6> Ease in </h6>
+        <div class="box3">
+             
+        </div>
+    </div>
+
+    <div class="box2-container">
+        <h6> ease out </h6>
+        <div class="box4">
+             
+        </div>
+    </div>
+
+    <div class="box2-container">
+        <h6> ease in ease out  </h6>
+        <div class="box5">
+             
+        </div>
+    </div>
+
+
+         <script>
+            alert("welcome to Animation Page");
+            confirm("this is best Animation Page. ")
+            prompt("write your City Name..?")
+
+             
+
+
+         </script>
+    
+</body>
+</html>

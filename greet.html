@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>greet</title>
+</head>
+<body>
+    <h1 style=" text-align: center; margin: auto; font: 4em sans-serif; color: brown;"> Greet Page</h1>
+
+    <input type="text" style="margin: auto; text-align: center; font: 5em sans-serif; margin-top: 20px;" name="name" id="name" > 
+    <button style="margin: auto; text-align: center; font: 5em sans-serif; margin-top: 20px;" onclick="call()">Greet</button>
+
+    <div class="greet" style="margin: auto; text-align: center; font: 5em sans-serif; margin-top: 30px;"></div>
+
+    <script>
+        function call(){
+            var names = document.getElementById('name').value;
+            var string = "Good Morning " + names;
+            document.getElementsByClassName('greet')[0].innerHTML = string;            
+        }
+    </script>
+    
+</body>
+</html>

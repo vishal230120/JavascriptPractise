@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetchDatafrom Prompt</title>
+</head>
+<body>
+    <div class="heading">
+        <h1 style="margin: auto; text-align: center; font: 4em sans-serif; color: brown;"> Fetch Data From Prompt </h1>
+    </div>
+
+    <fieldset style="margin-top: 30px;">
+        <h5 style="margin: auto; font: 2em sans-serif;" >Name: <i  style="margin: auto; font: 1em sans-serif;"  id="result"></i> </h5>
+    </fieldset>
+     
+    <script>
+        var name = prompt("enter your Name ");
+        document.getElementById('result').innerHTML = name;
+    </script>
+
+</body>
+</html>
