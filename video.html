@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Camera Access</title>
+</head>
+<body>
+    <video style="margin: auto; align-items: center;" id="video" width="650" height="420" autoplay></video>
+    <canvas id="canvas" width="240" height="320"></canvas>
+    <script>
+        var video = document.getElementById('video');
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
+
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function(stream) {
+                video.srcObject = stream;
+            })
+            .catch(function(err) {
+                console.log("Error: " + err);
+            });
+
+        video.addEventListener('click', function() {
+            context.drawImage(video, 0, 0, 240, 320);
+        });
+    </script>
+</body>
+</html>
