@@ -12,9 +12,7 @@
     </div>
 
     <script>
-       
         function showTime(){
-
         var date = new Date();
         var h = date.getHours();
         if(h>12)h=h-12;
@@ -31,10 +29,6 @@
 
         document.getElementsByTagName("h2")[0].innerText = (h + " : " +  m + " : " + s + "  " + session)
         setTimeout(showTime, 1000); 
-        
-      
-        
-
     }
        
     </script>
