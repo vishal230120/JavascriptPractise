@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Digital Time </title>
+</head>
+<body onload="showTime()">
+    <div id="name"> 
+    <h2  style="margin-top: 240px; margin-bottom: 40px; text-align: center; font: 10em sans-serif; color: rgb(15, 106, 234);"></h2>
+       
+    </div>
+
+    <script>
+       
+        function showTime(){
+
+        var date = new Date();
+        var h = date.getHours();
+        if(h>12)h=h-12;
+        h = h<10 ? "0"+ h : h
+        
+        var m = date.getMinutes();
+        m = m<10 ? "0"+ m : m
+        
+        var s = date.getSeconds();
+        s = s<10 ? "0"+ s : s
+       
+        var session = "AM";
+          if(h<=12) session = "PM"
+
+        document.getElementsByTagName("h2")[0].innerText = (h + " : " +  m + " : " + s + "  " + session)
+        setTimeout(showTime, 1000); 
+        
+      
+        
+
+    }
+       
+    </script>
+
+     
+</body>
+</html> 
