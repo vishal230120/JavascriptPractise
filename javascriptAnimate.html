@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript Animate </title>
+    <style>
+        .yellobox{
+            margin-top: 30px;
+            height: 580px;
+            width: 580px;
+           background-color:yellow;
+           position: absolute;
+        }
+        #redbox{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            position:relative;
+            top:  00px;
+            left: 00px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="margin: auto; text-align: center; font: 3em sans-serif; color: brown;">
+            JavaScript Animate
+        </h1>
+    </div>
+      <button onclick="move()"> start </button>
+    <div class="yellobox">
+        <div id="redbox"></div>
+    </div>
+
+    <script>
+        function move(){
+            var underbox = document.getElementById('redbox');
+            var pos = 0;
+            var animate = setInterval(start, 50);
+              function start(){
+                if(pos == 530){
+                   clearInterval(animate);
+                }
+                else{
+                    pos++ 
+                    underbox.style.top = pos + "px";
+                    underbox.style.left = pos + "px";
+                     underbox.style.backgroundColor = getRandomColor();
+                }
+               } 
+        }
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+             color += letters[Math.floor(Math.random() * 16)];
+       }
+  return color;
+}
+          
+
+    </script>
+    
+</body>
+</html>
